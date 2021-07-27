@@ -1,0 +1,57 @@
+:root {
+  --header-font: "Hammersmith One", sans-serif;
+  --body-font: "Montserrat", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background: rgb(31, 17, 135);
+  background: linear-gradient(
+    90deg,
+    rgba(31, 17, 135, 1) 0%,
+    rgba(13, 71, 241, 1) 47%,
+    rgba(94, 237, 254, 1) 100%
+  );
+  color: white;
+  font-family: var(--header-font);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  line-height: 89px;
+  font-size: 4.5rem;
+  padding-top: 15px;
+}
+
+.container {
+  margin-top: 30px;
+}
+
+.citySearchCard {
+  border: 2px solid black;
+  margin-right: 20px;
+}
+
+.currentWeatherCard {
+  font-family: var(--header-font);
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  line-height: 50px;
+}
+
+#weatherComponents {
+  list-style-type: circle;
+  font-family: var(--body-font);
+}
+
+#fiveDayForecastCard {
+  display: flex;
+  justify-content: center;
+  margin-top: 75px;
+}
