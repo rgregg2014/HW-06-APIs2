@@ -45,6 +45,10 @@ h1 {
   line-height: 50px;
 }
 
+.btn {
+  margin-top: 5px;
+}
+
 #weatherComponents {
   list-style-type: circle;
   font-family: var(--body-font);
