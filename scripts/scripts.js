@@ -28,12 +28,6 @@ var forecastFour = document.getElementById("cardFour");
 var forecastFive = document.getElementById("cardFive");
 //MASTER FUNCTION: ===================================================================
 
-function handleSubmit() {
-  displayCurrentWeather();
-  displayFiveDay();
-  saveSubmits();
-}
-
 //SECONDARY FUNCTIONS: ===============================================================
 
 function displayCurrentWeather() {
@@ -74,14 +68,12 @@ function displayFiveDay() {
   //display forecastFive
 }
 
-function saveSubmits(event) {
+submitButton.addEventListener("click", function (event) {
   event.preventDefault();
   var save = citySearch.value;
   localStorage.setItem("Last Search", save);
-  //store submission in local storage
-  //display local storage in pastSearches
-}
-
-// BUTTONS: ===========================================================================
-
-submitButton.addEventListener("click", handleSubmit());
+  var lastSave = localStorage.getItem("Last Search", save);
+  console.log(lastSave);
+  displayCurrentWeather();
+  displayFiveDay();
+});
