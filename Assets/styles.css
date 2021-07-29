@@ -33,8 +33,8 @@ h1 {
 }
 
 .citySearchCard {
-  border: 2px solid black;
   margin-right: 20px;
+  margin-bottom: 5px;
 }
 
 .currentWeatherCard {
@@ -49,6 +49,11 @@ h1 {
   margin-top: 5px;
 }
 
+.forecastCard {
+  font-family: var(--body-font);
+  list-style: none;
+}
+
 #weatherComponents {
   list-style-type: circle;
   font-family: var(--body-font);
@@ -58,4 +63,11 @@ h1 {
   display: flex;
   justify-content: center;
   margin-top: 75px;
+  border: 2px solid black;
+}
+
+#storedCities {
+  font-family: var(--header-font);
+  list-style-type: none;
+  font-size: 30px;
 }

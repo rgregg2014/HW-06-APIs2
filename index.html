@@ -29,16 +29,17 @@
         <div class="col citySearchCard">
           <div class="row col-lg-4">
             <h2>Search</h2>
-            <input type="text" placeholder="City, State" id="searchField">
+            <input type="text" placeholder="City" id="searchField">
             <button type="submit" class="btn btn-secondary" id="submitButton">Submit</button>
             <div class="pastSearches">
               <h4>Past Searches:</h4>
               <ul>
-
+                <li id="storedCities"></li>
               </ul>
             </div>
-          </div>
+          </div>  
         </div>
+        <div class="row">     
         <div class="col-8 currentWeatherCard" id="currentWeather">
           <h3>Current Weather</h3>
           <ul id="weatherComponents">
@@ -53,11 +54,36 @@
     <div id="fiveDayForecastCard">
       <h3>5 Day Forecast</h3>
       <!-- Hard code the 5 boxes-->
-      <div id="cardOne"></div>
-      <div id="cardTwo"></div>
-      <div id="cardThree"></div>
-      <div id="cardFour"></div>
-      <div id="cardFive"></div>
+      <ul class="forecastCard" id="cardOne">
+        <li id="dateOne"></li>
+        <li id="tempOne"></li>
+        <li id="windOne"></li>
+        <li id="humOne"></li>
+      </ul>
+      <ul class="forecastCard" id="cardTwo">
+        <li id="dateTwo"></li>
+        <li id="tempTwo"></li>
+        <li id="windTwo"></li>
+        <li id="humTwo"></li>
+      </ul>
+      <ul class="forecastCard" id="cardThree">
+        <li id="dateThree"></li>
+        <li id="tempThree"></li>
+        <li id="windThree"></li>
+        <li id="humThree"></li>
+      </ul>
+      <ul class="forecastCard" id="cardFour">
+        <li id="dateFour"></li>
+        <li id="tempFour"></li>
+        <li id="windFour"></li>
+        <li id="humFour"></li>
+      </ul>
+      <ul class="forecastCard" id="cardFive">
+        <li id="dateFive"></li>
+        <li id="tempFive"></li>
+        <li id="windFive"></li>
+        <li id="humFive"></li>
+      </ul>
     </div>
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
  <script src="./scripts/scripts.js"></script>
