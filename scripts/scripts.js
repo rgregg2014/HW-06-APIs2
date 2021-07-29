@@ -100,21 +100,21 @@ function displayFiveDay() {
     windOne.textContent = "Wind Speed: " + response.list[0].wind.speed;
     humOne.textContent = "Humidity: " + response.list[0].main.humidity;
     //Card Two
-    tempTwo.textContent = "Temperature: " + response.list[1].main.temp;
-    windTwo.textContent = "Wind Speed: " + response.list[1].wind.speed;
-    humTwo.textContent = "Humidity: " + response.list[1].main.humidity;
+    tempTwo.textContent = "Temperature: " + response.list[8].main.temp;
+    windTwo.textContent = "Wind Speed: " + response.list[8].wind.speed;
+    humTwo.textContent = "Humidity: " + response.list[8].main.humidity;
     //Card Three
-    tempThree.textContent = "Temperature: " + response.list[2].main.temp;
-    windThree.textContent = "Wind Speed: " + response.list[2].wind.speed;
-    humThree.textContent = "Humidity: " + response.list[2].main.humidity;
+    tempThree.textContent = "Temperature: " + response.list[16].main.temp;
+    windThree.textContent = "Wind Speed: " + response.list[16].wind.speed;
+    humThree.textContent = "Humidity: " + response.list[16].main.humidity;
     //Card Four
-    tempFour.textContent = "Temperature: " + response.list[3].main.temp;
-    windFour.textContent = "Wind Speed: " + response.list[3].wind.speed;
-    humFour.textContent = "Humidity: " + response.list[3].main.humidity;
+    tempFour.textContent = "Temperature: " + response.list[24].main.temp;
+    windFour.textContent = "Wind Speed: " + response.list[24].wind.speed;
+    humFour.textContent = "Humidity: " + response.list[24].main.humidity;
     //Card Five
-    tempFive.textContent = "Temperature: " + response.list[4].main.temp;
-    windFive.textContent = "Wind Speed: " + response.list[4].wind.speed;
-    humFive.textContent = "Humidity: " + response.list[4].main.humidity;
+    tempFive.textContent = "Temperature: " + response.list[32].main.temp;
+    windFive.textContent = "Wind Speed: " + response.list[32].wind.speed;
+    humFive.textContent = "Humidity: " + response.list[32].main.humidity;
   });
 }
 
